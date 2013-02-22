@@ -1,0 +1,16 @@
+/* 
+    Document   : styles
+    Created on : Feb 22, 2013, 6:50:05 AM
+    Author     : Femi TAIWO <dftaiwo@gmail.com>
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+        display: block;
+}
+body{
+        font-family: "Helvetica Neue";
+        font-weight:200;
+        
+}

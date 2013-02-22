@@ -1,0 +1,72 @@
+/* 
+    Document   : styles
+    Created on : Feb 19, 2013, 7:12:26 PM
+    Author     : Femi TAIWO <dftaiwo@gmail.com>
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+        display: block;
+}
+
+body{
+
+        font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-weight:200;
+        color:#444;
+        line-height: 1.3em;
+}
+
+
+#feedHeader{
+        margin-bottom:13px;
+}
+
+h1{
+        color:#000;
+        text-shadow:1px 1px 2px #ccc;
+        margin-bottom:4px;
+        font-size:1.5em;
+}
+
+#newsList{  
+        padding: 0px 3px 3px 5px; 
+        background-color:#FFF; 
+        border:1px solid #D3CAD7; 
+        margin-top:3px; 
+}
+#newsList li{ 
+        margin:0;
+        padding:0;
+        list-style: none;
+        clear:both;
+}
+
+#newsList .title{ 
+        font-weight:500; 
+        margin:5px 0px 0px 0px; 
+        padding-top:3px;
+        color:#4EBAFF; 
+        text-decoration:none ;
+        display:block;
+       font-size:1.3em;
+}
+
+#newsList .content{ 
+        padding:1px 3px 3px 3px; 
+        border-bottom:1px solid #D3CAD7; 
+        color:#3E3E3E; 
+}
+
+#newsList .content img{ 
+        max-width:250px;
+        align:left;
+        box-shadow: 1px 1px 2px #aaa;
+        margin:8px;
+}
+
+#newsList .date{ 
+        font-size:11px; 
+        color:#AAA; 
+}
