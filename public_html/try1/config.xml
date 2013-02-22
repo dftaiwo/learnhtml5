@@ -24,5 +24,6 @@
 <gap:splash src="img/icon.png" />
 <preference name="permissions" value="none"/>
 
-
+  <rim:loadingScreen backgroundColor="#47525c" foregroundImage=""/>
+  <rim:navigation mode="focus"/>
 </widget>

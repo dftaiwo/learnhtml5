@@ -47,7 +47,6 @@ p{
         background:#47525c;
         width:100%;
         top:0px;
-        height:55px;
          border-bottom:1px solid #ccc;
 }
 
@@ -81,7 +80,7 @@ h1{
 
 #newsList .title{ 
         font-weight:500; 
-        margin:5px 0px 0px 0px; 
+        margin:5px 0px 4px 0px; 
         padding-top:3px;
         color:#4EBAFF; 
         text-decoration:none ;
@@ -91,8 +90,9 @@ h1{
 }
 
 #newsList .content{ 
-        padding:1px 3px 3px 3px; 
-        border-bottom:1px solid #D3CAD7; 
+        padding:1px 3px 8px 3px; 
+        border-bottom:1px inset #666; 
+        margin-bottom:8px;
 }
 
 #newsList .content img{ 
