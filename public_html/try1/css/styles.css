@@ -48,6 +48,7 @@ p{
         width:100%;
         top:0px;
         height:55px;
+         border-bottom:1px solid #ccc;
 }
 
 h1{
@@ -115,10 +116,19 @@ h1{
         font-size:1.3em;
 }
 .footerLinks{
-        font-size:0.9em;
+        position:fixed;
+        bottom:0;
         text-align:center;
-        padding-top:15px;
-        padding-bottom:15px;
+        padding-top:6px;
+        background:#47525c;
+        font-size:0.9em;
+        border:1px solid #ccc;
+        border-bottom:0;
+}
+.footerLinks a{
+        padding:8px 8px;
+        margin:0px;
+        margin-bottom:6px;
 }
 a.btn:link,a.btn:visited{
         border:2px outset #ccc;

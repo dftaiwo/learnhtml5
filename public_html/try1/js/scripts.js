@@ -103,7 +103,7 @@ function loadFeed() {
  * @param {type} msg
  */
 function showMessage(msg) {
-
+        //alert ?
         $('#mainContent').html(msg);
 
 }
@@ -114,7 +114,9 @@ function showMessage(msg) {
 
 function goHome() {
 
-        location.href = 'index.html';
+        window.setTimeout(function(){
+                location.href = 'index.html';
+        },1000);
 
 }
 /**
@@ -129,6 +131,11 @@ function pullFeed(feedId) {
                 showMessage("We were unable to find the selected feed");
                 goHome();
                 return;
+        }
+        
+        if(typeof(selectedFeed)=='undefined'){
+                showMessage("We were unable to find the selected feed");
+                goHome();
         }
         try {
                 var htmlContent = new Array();
@@ -180,7 +187,7 @@ function pullFeed(feedId) {
                 }catch(e){
                         
                           showMessage("It seems like we have a connection problem " +e.message );
-                                goHome();
+                        goHome();
                 }
 
 
