@@ -21,10 +21,6 @@ var feedsList = new Array(
 
 
 
-$().ready(function() {
-
-
-});
 
 /**
  * Displays the list of feeds
