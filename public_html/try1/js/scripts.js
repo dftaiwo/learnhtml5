@@ -139,7 +139,7 @@ function pullFeed(feedId) {
         }
         try {
                 var htmlContent = new Array();
-                htmlContent.push('<a href="index.html" id="homeBtn">Home</a>');
+                htmlContent.push('<a href="index.html" id="homeBtn"><img src="img/home.png" /></a>');
 
                 htmlContent.push('<h1>');
                 htmlContent.push(selectedFeed.title);
