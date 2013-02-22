@@ -12,6 +12,19 @@ var feedsList = new Array(
         feed_url: 'http://feeds.feedburner.com/blogspot/OqshX'
 },
 {
+        title: 'Vanguard Newspapers',
+        description: 'Vanguard Newspapers',
+        website: 'http://www.vanguardngr.com/',
+        feed_url: 'http://www.vanguardngr.com/feed/'
+},
+{
+        title: 'All Africa News',
+        description: 'All Africa News',
+        website: 'http://allafrica.com/',
+        feed_url: 'http://allafrica.com/tools/headlines/rdf/nigeria/headlines.rdf'
+},
+
+{
         title: 'Punch Newspapers',
         description: 'Putting the Punch back on the web or in your day',
         website: 'http://www.punchng.com',
@@ -91,7 +104,7 @@ function loadFeed() {
  */
 function showMessage(msg) {
 
-        alert(msg);
+        $('#mainContent').html(msg);
 
 }
 /**
@@ -119,6 +132,8 @@ function pullFeed(feedId) {
         }
         try {
                 var htmlContent = new Array();
+                htmlContent.push('<a href="index.html" id="homeBtn">Home</a>');
+
                 htmlContent.push('<h1>');
                 htmlContent.push(selectedFeed.title);
                 htmlContent.push('</h1>');
@@ -127,6 +142,11 @@ function pullFeed(feedId) {
                 htmlContent.push('</span>');
                 $('#feedHeader').html(htmlContent.join("\n"));
                 feedUrl = selectedFeed.feed_url;
+                
+                if(typeof(google)=='undefined'){
+                        showMessage("Unable to connect. Please check that you have a working connection.<a href='index.html' class='btn'>Try Again</a>")
+                 return;       
+                }
                 var gFeed = new google.feeds.Feed(feedUrl);
                 gFeed.setNumEntries(10);
                 try{
@@ -137,10 +157,6 @@ function pullFeed(feedId) {
                                 htmlContent.push('<ul id="newsList">');
                                 for (var i = 0; i < result.feed.entries.length; i++) {
                                         var entry = result.feed.entries[i];
-                                        console.log(entry);
-//                                        var div = document.createElement("div");
-//                                        div.appendChild(document.createTextNode(entry.title));
-//                                        container.appendChild(div);
                                         htmlContent.push('<li>');
                                         htmlContent.push('<span class="title">');
                                         htmlContent.push(entry.title);
@@ -148,7 +164,10 @@ function pullFeed(feedId) {
                                         htmlContent.push('<div class="content">');
                                         htmlContent.push(formatAsSummary(entry.content));
                                         htmlContent.push('</div>');
-
+                                        htmlContent.push('<a class="newsLink" href="'+entry.link+'"  target="_blank" rel="external">');
+                                        htmlContent.push(entry.link);
+                                        htmlContent.push('</a>');
+                                        
                                         htmlContent.push('</li>');
                                 }
                                 htmlContent.push('</ul>');

@@ -47,6 +47,7 @@ p{
         background:#47525c;
         width:100%;
         top:0px;
+        height:55px;
 }
 
 h1{
@@ -103,4 +104,51 @@ h1{
 #newsList .date{ 
         font-size:11px; 
         color:#AAA; 
+}
+
+
+#homeBtn {
+        float:right;
+        margin-right:5px;
+        display:block;
+        padding:18px;
+        font-size:1.3em;
+}
+.footerLinks{
+        font-size:0.9em;
+        text-align:center;
+        padding-top:15px;
+        padding-bottom:15px;
+}
+a.btn:link,a.btn:visited{
+        border:2px outset #ccc;
+        background:#ccc;
+        padding:4px 8px;
+        color:#000;
+        border-radius: 4px;
+}
+a.btn:hover{
+        
+        border:2px outset #000;
+}
+
+.feeds {
+        padding:0;
+        margin:10px 0px;
+}
+.feeds li{
+        
+        list-style:none;
+        background:#36414b;
+}
+.feeds li a,.feeds li a:visited{
+        display:block;
+        padding:8px 8px;
+        margin:0px;
+        margin-bottom:6px;
+        font-size:1.2em;
+                
+}
+.feeds li a:hover{
+color:#fff;                
 }
