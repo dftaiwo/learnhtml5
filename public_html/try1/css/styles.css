@@ -14,6 +14,8 @@ body{
         background:#47525c;
         font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
         font-weight:200;
+        font-size:13px;
+
         color:#444;
         line-height: 1.3em;
         color:white;
@@ -26,7 +28,9 @@ a,a:visited{
 
 p{
         color:#fff;
+        font-size:13px;
 }
+
 .line{
     height:1px;
     overflow:hidden;
@@ -38,6 +42,11 @@ p{
 
 #feedHeader{
         margin-bottom:13px;
+        color:#4EBAFF;
+        position:fixed;
+        background:#47525c;
+        width:100%;
+        top:0px;
 }
 
 h1{
@@ -48,8 +57,13 @@ h1{
 }
 
 #newsList{  
+        margin-top:30px;
         padding: 0px 3px 3px 5px; 
         margin-top:3px; 
+}
+
+.marginedTop{
+        margin-top:55px;
 }
 #newsList li{ 
         margin:0 5px 10px 0;
@@ -77,7 +91,6 @@ h1{
 #newsList .content{ 
         padding:1px 3px 3px 3px; 
         border-bottom:1px solid #D3CAD7; 
-        color:#3E3E3E; 
 }
 
 #newsList .content img{ 
