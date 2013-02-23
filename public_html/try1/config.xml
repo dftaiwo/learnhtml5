@@ -3,7 +3,7 @@
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "com.gdg.newsmix"
         versionCode="10" 
-        version   = "1.0.0">
+        version   = "2.2.0">
 
     <!-- versionCode is optional and Android only -->
 
@@ -17,13 +17,8 @@
         Femi TAIWO 
     </author>
 
-<preference name="fullscreen" value="true" />
-<preference name="splash-screen-duration" value="3000" />
-<preference name="load-url-timeout" value="15000" />
-<icon src="img/icon.png" />
-<gap:splash src="img/icon.png" />
-<preference name="permissions" value="none"/>
+    <preference name="fullscreen" value="true" />
+    <preference name="permissions" value="none"/>
+    
 
-  <rim:loadingScreen backgroundColor="#47525c" foregroundImage=""/>
-  <rim:navigation mode="focus"/>
 </widget>

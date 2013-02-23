@@ -23,6 +23,12 @@ var feedsList = new Array(
         website: 'http://allafrica.com/',
         feed_url: 'http://allafrica.com/tools/headlines/rdf/nigeria/headlines.rdf'
 },
+{
+        title: 'The Nation Online',
+        description: 'The Nation',
+        website: 'http://www.thenationonlineng.net',
+        feed_url: 'http://www.thenationonlineng.net/2011/index.php/feed/index.rss'
+},
 
 {
         title: 'Punch Newspapers',

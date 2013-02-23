@@ -15,7 +15,7 @@ body{
         font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
         font-weight:200;
         font-size:13px;
-
+        height:100%;
         color:#444;
         line-height: 1.3em;
         color:white;
@@ -32,11 +32,11 @@ p{
 }
 
 .line{
-    height:1px;
-    overflow:hidden;
-    background-color:#2b353d;
-    border-bottom:1px solid #687581;
-    margin:10px 0;
+        height:1px;
+        overflow:hidden;
+        background-color:#2b353d;
+        border-bottom:1px solid #687581;
+        margin:10px 0;
 }
 
 
@@ -47,7 +47,7 @@ p{
         background:#47525c;
         width:100%;
         top:0px;
-         border-bottom:1px solid #ccc;
+        border-bottom:1px solid #ccc;
 }
 
 h1{
@@ -72,10 +72,10 @@ h1{
         list-style: none;
         clear:both;
         border:1px solid #38434d;
-    /* CSS3 round corners: */
-    -moz-border-radius:5px;
-    -webkit-border-radius:5px;
-    border-radius:5px;
+        /* CSS3 round corners: */
+        -moz-border-radius:5px;
+        -webkit-border-radius:5px;
+        border-radius:5px;
 }
 
 #newsList .title{ 
@@ -85,8 +85,8 @@ h1{
         color:#4EBAFF; 
         text-decoration:none ;
         display:block;
-       font-size:1.3em;
-       text-shadow: 0 1px 1px #000;
+        font-size:1.3em;
+        text-shadow: 0 1px 1px #000;
 }
 
 #newsList .content{ 
@@ -137,7 +137,7 @@ a.btn:link,a.btn:visited{
         border-radius: 4px;
 }
 a.btn:hover{
-        
+
         border:2px outset #000;
 }
 
@@ -146,7 +146,7 @@ a.btn:hover{
         margin:10px 0px;
 }
 .feeds li{
-        
+
         list-style:none;
         background:#36414b;
 }
@@ -156,8 +156,8 @@ a.btn:hover{
         margin:0px;
         margin-bottom:6px;
         font-size:1.2em;
-                
+
 }
 .feeds li a:hover{
-color:#fff;                
+        color:#fff;                
 }
